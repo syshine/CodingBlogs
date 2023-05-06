@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Coding Notes",
   description: "Coding Memo",
+  base: '/CodingBlogs/', // 如果想用 https://*.github.io/CodingBlogs/ 访问，那么这句话必填
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
