@@ -36,7 +36,6 @@ export default defineConfig({
 
     sidebar: {
       // 注意,侧边栏是自上而下扫描(类似switch-case),所以子菜单写在前面(如/vue/vue3/写在/vue/上面)
-
       /// ------------------------------ java ------------------------------
       '/java/': [
         {
