@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Coding Notes"
+  name: "代码记事本"
   text: "Coding Memo"
   tagline: My great project tagline
   actions:
