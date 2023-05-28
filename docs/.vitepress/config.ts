@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "代码记事本",
   description: "记录代码经验和错误处理",
+  lang:'zh-cn',
+  lastUpdated: true,
   base: '/CodingBlogs/', // 如果想用 https://*.github.io/CodingBlogs/ 访问，那么这句话必填
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,8 +22,11 @@ export default defineConfig({
         text: '前端',
         items: [
           { text: 'Vue', link: '/vue/' },
-          { text: 'CSS', link: '/html/css/' },
-          { text: 'Type Script', link: '/html/ts/' },
+          { text: 'HTML', link: '/frontend/html/' },
+          { text: 'CSS', link: '/frontend/css/' },
+          { text: 'JavaScript', link: '/frontend/js/' },
+          { text: 'TypeScript', link: '/frontend/ts/' },
+          { text: 'jQuery', link: '/frontend/jquery/' },
         ]
       },
       {
@@ -32,11 +37,48 @@ export default defineConfig({
         ]
       },
       { text: 'NodeJs', link: '/nodejs/' },
+      { text: '书签', link: '/bookmarks/tools' },
+      {
+        text: 'VitePress',
+        items: [
+          { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
+          { text: 'VitePress', link: 'https://vitepress.dev/' },
+          { text: 'VitePress中文网', link: 'https://vitejs.cn/vitepress/' },
+        ]
+      },
     ],
 
     sidebar: {
       // 注意,侧边栏是自上而下扫描(类似switch-case),所以子菜单写在前面(如/vue/vue3/写在/vue/上面)
       /// ------------------------------ java ------------------------------
+      '/java/framework/': [
+        {
+          text: 'MyBatis',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/java/framework/mybatis/' },
+            { text: '配置文件', link: '/java/framework/mybatis/config' },
+          ]
+        },
+        {
+          text: 'Spring Boot',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/java/framework/spring-boot/' },
+            { text: 'Mybatis', link: '/java/framework/spring-boot/mybatis' },
+            { text: 'Thymeleaf', link: '/java/framework/spring-boot/thymeleaf' }
+          ]
+        },
+        {
+          text: 'Spring MVC',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/java/framework/spring-mvc/' },
+            { text: '配置文件', link: '/java/framework/spring-mvc/config' },
+            { text: '注解', link: '/java/spring-mvc/annotation' },
+          ]
+        }
+      ],
       '/java/': [
         {
           text: 'Java',
@@ -51,9 +93,9 @@ export default defineConfig({
           text: '框架',
           collapsed: false,
           items: [
-            { text: 'Spring Boot', link: '/java/framework/spring-boot' },
-            { text: 'Spring MVC', link: '/java/framework/spring-mvc' },
-            { text: 'MyBatis', link: '/java/framework/MyBatis' },
+            { text: 'Spring Boot', link: '/java/framework/spring-boot/' },
+            { text: 'Spring MVC', link: '/java/framework/spring-mvc/' },
+            { text: 'MyBatis', link: '/java/framework/MyBatis/' },
           ]
         }
       ],
@@ -74,8 +116,11 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '介绍', link: '/database/mysql/' },
+            { text: '连接字符串', link: '/database/mysql/connect-string' },
+            { text: '分页', link: '/database/mysql/pagination' },
             { text: '指令', link: '/database/mysql/command' },
             { text: '存储过程', link: '/database/mysql/procedure' },
+            { text: '错误处理', link: '/database/mysql/error' },
           ]
         }
       ],
@@ -85,6 +130,8 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '介绍', link: '/database/sqlserver/' },
+            { text: '连接字符串', link: '/database/sqlserver/connect-string' },
+            { text: '分页', link: '/database/sqlserver/pagination' },
             { text: '指令', link: '/database/sqlserver/command' },
             { text: '存储过程', link: '/database/sqlserver/procedure' },
           ]
@@ -101,35 +148,68 @@ export default defineConfig({
           ]
         }
       ],
-      /// ------------------------------ HTML ------------------------------
-      '/html/css/':[
+      /// ------------------------------ frontend ------------------------------
+      '/frontend/html/':[
+        {
+          text: 'HTML',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/frontend/html/' },
+          ]
+        }
+      ],
+      '/frontend/css/':[
         {
           text: 'CSS样式表',
           collapsed: false,
           items: [
-            { text: '介绍', link: '/html/css/' },
-            { text: '居中', link: '/html/css/center' },
+            { text: '介绍', link: '/frontend/css/' },
+            { text: '居中', link: '/frontend/css/center' },
           ]
         }
       ],
-      '/html/ts/':[
+      '/frontend/js/':[
         {
-          text: 'Type Script',
+          text: 'JavaScript',
           collapsed: false,
           items: [
-            { text: '介绍', link: '/html/ts/' },
-            { text: '错误', link: '/html/ts/error' },
+            { text: '介绍', link: '/frontend/js/' },
+            { text: '数组', link: '/frontend/js/array' },
           ]
         }
       ],
-      '/html/':[
+      '/frontend/ts/':[
         {
-          text: 'Html',
+          text: 'TypeScript',
           collapsed: false,
           items: [
-            { text: '介绍', link: '/html/' },
-            { text: 'CSS', link: '/html/css/' },
-            { text: 'Type Script', link: '/html/ts/' },
+            { text: '介绍', link: '/frontend/ts/' },
+            { text: '错误', link: '/frontend/ts/error' },
+          ]
+        }
+      ],
+      '/frontend/jquery/':[
+        {
+          text: 'jQuery',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/frontend/jquery/' },
+            { text: 'HTML', link: '/frontend/jquery/html/' },
+            { text: 'AJAX', link: '/frontend/jquery/ajax/' },
+            { text: '事件', link: '/frontend/jquery/event/' },
+          ]
+        }
+      ],
+      '/frontend/':[
+        {
+          text: '前端',
+          collapsed: false,
+          items: [
+            { text: 'HTML', link: '/frontend/html/' },
+            { text: 'CSS', link: '/frontend/css/' },
+            { text: 'JavaScript', link: '/frontend/js/' },
+            { text: 'TypeScript', link: '/frontend/ts/' },
+            { text: 'jQuery', link: '/frontend/jquery/' },
           ]
         }
       ],
@@ -146,7 +226,6 @@ export default defineConfig({
             { text: '路由', link: '/vue/vue3/router' },
             { text: '国际化', link: '/vue/vue3/i18n' },
             { text: '错误', link: '/vue/vue3/error' },
-            { text: '国际化', link: '/vue/vue3/i18n' },
           ]
         },
         {
@@ -225,10 +304,47 @@ export default defineConfig({
           ]
         }
       ],
+      '/bookmarks/':[
+        {
+          text: '常规',
+          collapsed: false,
+          items: [
+            { text: '工具', link: '/bookmarks/tools' },
+            { text: '素材', link: '/bookmarks/material' },
+            { text: '教程', link: '/bookmarks/study' },
+          ]
+        },
+        {
+          text: '前端',
+          collapsed: false,
+          items: [
+            { text: 'Vue', link: '/bookmarks/frontend/vue' },
+          ]
+        },
+      ],
     },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/syshine/CodingBlogs/edit/main/docs/:path'
+    },
+
+    // search: {
+    //   provider: 'algolia',
+    //   options: {
+    //     appId: 'MP9BE7VZ75', //8J64VVRP8K
+    //     apiKey: '90347545ead9d2e74631bb5b9f93b76a', //a18e2f4cc5665f6602c5631fd868adfd
+    //     indexName: 'vitepress'
+    //   }
+    // },
+
+    // 编译时会有错误, Could not load /@localSearchIndex: section.titles.at is not a function
+    // search: {
+    //   provider: 'local'
+    // },
+
+  },
 })

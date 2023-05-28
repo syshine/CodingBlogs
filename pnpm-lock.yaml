@@ -24,6 +24,9 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
+    peerDependenciesMeta:
+      '@algolia/client-search':
+        optional: true
     dependencies:
       '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared/1.8.2
       algoliasearch: registry.npmmirror.com/algoliasearch/4.17.0
