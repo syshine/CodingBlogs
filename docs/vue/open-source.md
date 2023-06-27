@@ -36,4 +36,4 @@ cd bilibili-vue && yarn && yarn dev
 ```bash
 cd bilibili-vue/bilibili-api && yarn install && yarn dev
 ```
-为了确保运行正确，请先运行后端服务。再运行前端，之后访问 http :// localhost: 8080
+为了确保运行正确，请先运行后端服务。再运行前端，之后访问 `http://localhost:8080`

@@ -1,3 +1,5 @@
 node_modules/
 .vitepress/cache/
 .vitepress/dist/
+deploy-github.sh
+deploy-nginx.sh

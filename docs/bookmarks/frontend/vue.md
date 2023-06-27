@@ -41,9 +41,12 @@ Vite（法语意为 "快速的"，发音 /vit/，发音同 "veet"）是一种新
 
 # VitePress
 [文档](https://vitepress.dev/)
+[VitePress中文网](https://vitejs.cn/vitepress/)
 
 # 其他
 
 [Awesome个人收藏夹](https://github.com/vitejs/awesome-vite) [示例地址](https://panjiachen.github.io/awesome-bookmarks/)
 
 [VueUse](https://vueuse.org/)
+
+[Vue Devtools](https://devtools.vuejs.org/)

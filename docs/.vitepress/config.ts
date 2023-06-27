@@ -6,7 +6,12 @@ export default defineConfig({
   description: "记录代码经验和错误处理",
   lang:'zh-cn',
   lastUpdated: true,
-  base: '/CodingBlogs/', // 如果想用 https://*.github.io/CodingBlogs/ 访问，那么这句话必填
+  base: '/CodingBlogs/', // 如果想用 https://*.github.io/CodingBlogs/ 访问，那么这句话必填。如果发布到本地则注释掉
+  vite: {
+    server: {
+      port: 7000, // 运行端口号
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -116,11 +121,13 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '介绍', link: '/database/mysql/' },
+            { text: '设置', link: '/database/mysql/settings' },
             { text: '连接字符串', link: '/database/mysql/connect-string' },
             { text: '分页', link: '/database/mysql/pagination' },
             { text: '指令', link: '/database/mysql/command' },
             { text: '存储过程', link: '/database/mysql/procedure' },
             { text: '错误处理', link: '/database/mysql/error' },
+            { text: '备份与还原', link: '/database/mysql/backup' },
           ]
         }
       ],
@@ -241,7 +248,7 @@ export default defineConfig({
           text: 'Vue2',
           collapsed: false,
           items: [
-            { text: '介绍', link: '/vue/vue/' },
+            { text: '介绍', link: '/vue/vue2/' },
           ]
         }
       ],
