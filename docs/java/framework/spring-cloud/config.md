@@ -61,4 +61,4 @@ spring:
   config:
     import: "optional:configserver:http://localhost:6001"
 ```
-项目启动时会从http://localhost:6001/ 拉取eureka-server.yml导入配置
+项目启动时会从`http://localhost:6001/` 拉取eureka-server.yml导入配置

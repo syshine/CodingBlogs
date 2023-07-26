@@ -7,6 +7,7 @@ export default defineConfig({
   lang:'zh-cn',
   lastUpdated: true,
   base: '/CodingBlogs/', // 如果想用 https://*.github.io/CodingBlogs/ 访问，那么这句话必填。如果发布到本地则注释掉
+  ignoreDeadLinks: true, // 忽略死链接, 如果不设置，则文件中有如http://localhost:15672/index 的链接会编译错误
   vite: {
     server: {
       port: 7000, // 运行端口号
