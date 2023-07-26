@@ -26,6 +26,13 @@ mysqldump -uroot -p  mysql db event > D:\dbtest.sql
 ```bash
 mysqldump -uroot -p test --ignore-table=test.t1 --ignore-table=test.t2 > D:\dbtest.sql
 ```
+### 注意！
+Win10的PowerShell数据重定向文件编码为UTF16，使用--result-file=选项代替`>`指定导出文件目录，这样由 mysqldump 命令本身导出的文件就可以避开由于终端编码问题导致的乱码原因了
+```bash
+mysqldump -uroot -p test --ignore-table=test.t1 --ignore-table=test.t2 --result-file=D:\dbtest.sql
+```
+
+
 # 数据库还原
 ## 系统行命令
 如果命令提示符显示`mysqladmin`不是内部或者外部的命令，请在环境变量里的`Path`里添加路径：`C:\Program Files\MySQL\MySQL Server 8.0\bin`（因具体安装路径和版本而定）

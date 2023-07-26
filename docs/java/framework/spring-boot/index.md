@@ -10,3 +10,18 @@ Spring Boot的主要特点：
 - 尽可能时自动配置Spring
 - 提供生产就绪的功能，如指标，健康检查和外部化配置
 - 绝对无代码生成，也不需要XML配置
+
+## 新建Spring Boot项目
+
+## Eclipse创建
+### 1.安装STS插件
+1. Help->Eclipse Marketplace...
+2. 搜索sts
+3. 安装Spring Tools(aka Spring IDE and Spring Tool Suit)
+### 2.新建项目
+File->New->Project...
+选择Spring Boot里面的Spring Starter Project
+
+
+### 官网创建
+[官网创建SpringBoot项目](https://start.spring.io/)

@@ -42,6 +42,13 @@ export default defineConfig({
         ]
       },
       { text: 'NodeJs', link: '/nodejs/' },
+      { 
+        text: '操作系统',
+        items: [
+          { text: 'Windows', link: '/windows/' },
+          { text: 'Linux', link: '/linux/' },
+        ]
+      },
       { text: '书签', link: '/bookmarks/tools' },
       {
         text: 'VitePress',
@@ -63,6 +70,8 @@ export default defineConfig({
           items: [
             { text: '介绍', link: '/java/framework/mybatis/' },
             { text: '配置文件', link: '/java/framework/mybatis/config' },
+            { text: 'association', link: '/java/framework/mybatis/association' },
+            { text: 'collection', link: '/java/framework/mybatis/collection' },
           ]
         },
         {
@@ -71,7 +80,8 @@ export default defineConfig({
           items: [
             { text: '介绍', link: '/java/framework/spring-boot/' },
             { text: 'Mybatis', link: '/java/framework/spring-boot/mybatis' },
-            { text: 'Thymeleaf', link: '/java/framework/spring-boot/thymeleaf' }
+            { text: 'Thymeleaf', link: '/java/framework/spring-boot/thymeleaf' },
+            { text: 'RabbitMQ', link: '/java/framework/spring-boot/rabbitmq' }
           ]
         },
         {
@@ -80,7 +90,19 @@ export default defineConfig({
           items: [
             { text: '介绍', link: '/java/framework/spring-mvc/' },
             { text: '配置文件', link: '/java/framework/spring-mvc/config' },
-            { text: '注解', link: '/java/spring-mvc/annotation' },
+            { text: '注解', link: '/java/framework/spring-mvc/annotation' },
+          ]
+        },
+        {
+          text: 'Spring Cloud',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/java/framework/spring-cloud/' },
+            { text: 'Eureka Server', link: '/java/framework/spring-cloud/eureka-server' },
+            { text: 'Eureka Client', link: '/java/framework/spring-cloud/eureka-client' },
+            { text: 'Gateway', link: '/java/framework/spring-cloud/gateway' },
+            { text: 'Config', link: '/java/framework/spring-cloud/config' },
+            { text: 'OpenFeign', link: '/java/framework/spring-cloud/openfeign' },
           ]
         }
       ],
@@ -100,7 +122,15 @@ export default defineConfig({
           items: [
             { text: 'Spring Boot', link: '/java/framework/spring-boot/' },
             { text: 'Spring MVC', link: '/java/framework/spring-mvc/' },
+            { text: 'Spring Cloud', link: '/java/framework/spring-cloud/' },
             { text: 'MyBatis', link: '/java/framework/MyBatis/' },
+          ]
+        },
+        {
+          text: '组件',
+          collapsed: false,
+          items: [
+            { text: 'RabbitMQ', link: '/java/conponents/rabbitmq' },
           ]
         }
       ],
@@ -311,6 +341,41 @@ export default defineConfig({
           ]
         }
       ],
+      /// ------------------------------ 操作系统 ------------------------------
+      '/windows/':[
+        {
+          text: 'Windows',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/windows/' },
+            { text: 'Power Shell', link: '/windows/powershell' },
+          ]
+        }
+      ],
+      '/linux/':[
+        {
+          text: 'Linux',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/linux/' },
+            { text: 'Java', link: '/linux/java' },
+            { text: 'MySql', link: '/linux/mysql' },
+            { text: 'Nginx', link: '/linux/nginx' },
+            { text: 'NodeJs', link: '/linux/nodejs' },
+          ]
+        }
+      ],
+      '/os/':[
+        {
+          text: '操作系统',
+          collapsed: false,
+          items: [
+            { text: 'Windows', link: '/windows/' },
+            { text: 'Linux', link: '/linux/' },
+          ]
+        }
+      ],
+
       '/bookmarks/':[
         {
           text: '常规',
