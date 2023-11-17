@@ -4,25 +4,35 @@
 ## Element UI
 [Element文档](https://element.eleme.cn/#/zh-CN)
 
-## 开源项目
+## Vue2开源项目
 ### vue-element-admin
 后台前端解决方案
-[文档](https://panjiachen.github.io/vue-element-admin-site/zh/) [在线预览](https://panjiachen.gitee.io/vue-element-admin/#/login?redirect=%2Fdashboard) [GitHub地址](https://github.com/PanJiaChen/vue-element-admin)
+[文档](https://panjiachen.github.io/vue-element-admin-site/zh/) 
+[在线预览](https://panjiachen.gitee.io/vue-element-admin/#/login?redirect=%2Fdashboard) 
+[GitHub地址](https://github.com/PanJiaChen/vue-element-admin)
 
 ### vue-admin-template
 适合用来开发后台集成方案的基础模板
 [在线预览](https://panjiachen.gitee.io/vue-admin-template/#/login?redirect=%2Fdashboard)
+
 # Vue3
 [文档](https://cn.vuejs.org/) [例子](https://cn.vuejs.org/examples/#hello-world)
+
+## Element Plus
+[Element Plus文档](https://element-plus.gitee.io/zh-CN/)
+
+## Vue3开源项目
+### vue-next-admin
+[在线预览](https://lyt-top.gitee.io/vue-next-admin-preview/#/login)
+[GitHub地址](https://github.com/lyt-Top/vue-next-admin)
+[Gitee地址](https://gitee.com/lyt-Top/vue-next-admin)
+[开发文档](https://lyt-top.gitee.io/vue-next-admin-doc-preview/)
 
 
 ## Pinia
 状态管理(Vue2中使用Vuex)
 [文档](https://pinia.vuejs.org/zh/)
 [中文文档](https://pinia.web3doc.top/)
-
-## Element Plus
-[Element Plus文档](https://element-plus.gitee.io/zh-CN/)
 
 # Vue CLI
 [文档](https://next.cli.vuejs.org/zh/)
@@ -42,6 +52,10 @@ Vite（法语意为 "快速的"，发音 /vit/，发音同 "veet"）是一种新
 # VitePress
 [文档](https://vitepress.dev/)
 [VitePress中文网](https://vitejs.cn/vitepress/)
+
+# Electron
+[文档](https://www.electronjs.org/zh/)
+[electron-vite](https://cn.electron-vite.org/)
 
 # 其他
 

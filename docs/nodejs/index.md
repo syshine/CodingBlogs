@@ -21,7 +21,7 @@ Node.js® 是一个开源、跨平台的 JavaScript 运行时环境。
 
 ```bash
 npm config set prefix"nodeglobal路径"
-和
+# 和
 npm config set cache "node_cache路径"
 ```
 执行成功后还得设置环境变量，详情请看上面的参考网址

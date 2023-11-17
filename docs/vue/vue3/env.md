@@ -2,7 +2,7 @@
 ## 创建 env
 在根目录下创建
 .env.development
-```
+```conf
 # just a flag
 ENV = 'development'
 
@@ -15,7 +15,7 @@ VITE_APP_BASE_API = '/dev-api'
 VITE_APP_PROXY_API = 'http://127.0.0.1:port/xxx/'
 ```
 .env.prod
-```
+```conf
 # just a flag
 ENV = 'development'
 

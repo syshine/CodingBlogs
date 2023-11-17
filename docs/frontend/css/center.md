@@ -48,3 +48,24 @@
   </body>
 </html>
 ```
+
+### 相邻的图标和文本居中对齐
+```html
+<template>
+  <div class="container">
+    <el-icon><Search /></el-icon>
+    <el-text>abc</el-text>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { Search } from '@element-plus/icons-vue'
+</script>
+
+<style scoped lang="scss">
+.container {
+  align-items: center;
+  display: flex;
+}
+</style>
+```

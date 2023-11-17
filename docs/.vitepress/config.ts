@@ -22,6 +22,7 @@ export default defineConfig({
         items: [
           { text: 'Java', link: '/java/' },
           { text: 'C#', link: '/cshape/' },
+          { text: 'Electron', link: '/electron/' },
         ]
       },
       {
@@ -145,6 +146,20 @@ export default defineConfig({
           ]
         }
       ],
+      /// ------------------------------ Electron ------------------------------
+      '/electron/': [
+        {
+          text: 'Electron',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/electron/' },
+            { text: '错误', link: '/electron/error' },
+            { text: '环境变量', link: '/electron/env' },
+            { text: 'TypeScript', link: '/electron/ts' },
+            { text: '安装devTools工具', link: '/electron/devtools-installer' },
+          ]
+        }
+      ],
       /// ------------------------------ 数据库 ------------------------------
       '/database/mysql/':[
         {
@@ -260,6 +275,7 @@ export default defineConfig({
             { text: '介绍', link: '/vue/vue3/' },
             { text: '语法', link: '/vue/vue3/grammar' },
             { text: '变量', link: '/vue/vue3/var' },
+            { text: '生命周期', link: '/vue/vue3/lifecycle' },
             { text: '环境', link: '/vue/vue3/env' },
             { text: '路由', link: '/vue/vue3/router' },
             { text: '国际化', link: '/vue/vue3/i18n' },
@@ -339,9 +355,32 @@ export default defineConfig({
             { text: 'npm', link: '/nodejs/npm' },
             { text: 'yarn', link: '/nodejs/yarn' },
             { text: 'pnpm', link: '/nodejs/pnpm' },
+            { text: 'mysql', link: '/nodejs/mysql' },
           ]
         }
       ],
+      /// ------------------------------ ide ------------------------------
+      '/ide/vscode':[
+        {
+          text: 'VS Code',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/ide/vscode/' },
+            { text: '设置', link: '/ide/vscode/settings' },
+            { text: '代码片段', link: '/ide/vscode/snippets' },
+          ]
+        }
+      ],
+      '/ide/':[
+        {
+          text: 'IDE',
+          collapsed: false,
+          items: [
+            { text: 'VS Code', link: '/ide/vscode/' },
+          ]
+        }
+      ],
+
       /// ------------------------------ 操作系统 ------------------------------
       '/windows/':[
         {
@@ -363,6 +402,16 @@ export default defineConfig({
             { text: 'MySql', link: '/linux/mysql' },
             { text: 'Nginx', link: '/linux/nginx' },
             { text: 'NodeJs', link: '/linux/nodejs' },
+          ]
+        },
+        {
+          text: 'Docker',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/linux/docker/' },
+            { text: '安装', link: '/linux/docker/install' },
+            { text: 'SpringBoot', link: '/linux/docker/springboot' },
+            { text: 'MySql', link: '/linux/docker/mysql' },
           ]
         }
       ],
@@ -391,6 +440,7 @@ export default defineConfig({
           text: '前端',
           collapsed: false,
           items: [
+            { text: '通用', link: '/bookmarks/frontend/' },
             { text: 'Vue', link: '/bookmarks/frontend/vue' },
           ]
         },

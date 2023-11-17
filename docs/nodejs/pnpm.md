@@ -20,10 +20,14 @@ iwr https://get.pnpm.io/install.ps1 -useb | iex
 
 ## 设置源
 ```bash
-//查看源
+# 查看源
 pnpm config get registry 
-//切换淘宝源
+# 切换淘宝源
 pnpm config set registry https://registry.npmmirror.com/
+pnpm config set disturl https://npm.taobao.org/dist
+
+# 还原
+pnpm config set registry https://registry.npmjs.org
 ```
 
 ## 使用
