@@ -3,11 +3,11 @@
 
 | 鼠标事件	| 键盘事件	| 表单事件	| 文档/窗口事件 |
 | --- | --- | --- | --- |
-| [click](#click())	| keypress	| submit	| load |
-| [dblclick](#dblclick())	| keydown	| change	| resize |
-| mouseenter	| keyup	| focus	| scroll |
-| mouseleave |  | blur	| unload |
-| hover |  |  |   |
+| [click](#click)	| keypress	| submit	| load |
+| [dblclick](#dblclick)	| keydown	| change	| resize |
+| mouseenter	| keyup	| [focus](#focus)	| scroll |
+| mouseleave |  | [blur](#blur)	| unload |
+| [hover](#hover) |  |  |   |
 
 ## 鼠标事件
 ### click()

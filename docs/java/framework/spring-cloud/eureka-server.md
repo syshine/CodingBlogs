@@ -50,6 +50,7 @@ eureka:
 ```
 
 ### 代码
+启动类
 ```java
 @SpringBootApplication
 @EnableEurekaServer //当前使用eureka的server

@@ -2,8 +2,11 @@
 ## Linux安装Nodejs
 ### 下载
 CentOS7.9.2009安装最新版本会有glibc版本过低问题，所以本机安装v16.20.1版本
+
 [最新版本下载地址](https://nodejs.org/zh-cn/download)
+
 [历史版本下载地址](https://nodejs.org/zh-cn/download/releases)
+
 [v16.20.1下载地址](https://nodejs.org/download/release/v16.20.1/)(下载node-v16.20.1-linux-x64.tar.gz)
 
 ### 安装

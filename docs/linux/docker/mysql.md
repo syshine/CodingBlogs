@@ -77,4 +77,4 @@ mysql> source /root/javatest.sql
 
 # 查询
 mysql> select * from javatest.test
-```bash
+```

@@ -23,6 +23,7 @@ export default defineConfig({
           { text: 'Java', link: '/java/' },
           { text: 'C#', link: '/cshape/' },
           { text: 'Electron', link: '/electron/' },
+          { text: 'Python', link: '/python/' },
         ]
       },
       {
@@ -83,6 +84,7 @@ export default defineConfig({
             { text: '介绍', link: '/java/framework/spring-boot/' },
             { text: 'Mybatis', link: '/java/framework/spring-boot/mybatis' },
             { text: 'Thymeleaf', link: '/java/framework/spring-boot/thymeleaf' },
+            { text: 'Redis', link: '/java/framework/spring-boot/redis' },
             { text: 'RabbitMQ', link: '/java/framework/spring-boot/rabbitmq' }
           ]
         },
@@ -116,6 +118,9 @@ export default defineConfig({
             { text: '介绍', link: '/java/' },
             { text: '多线程', link: '/java/multhread' },
             { text: 'Lambda表达式', link: '/java/lambda' },
+            { text: '类型转换', link: '/java/typecast' },
+            { text: '文件', link: '/java/file' },
+            { text: '列表和数组', link: '/java/list' },
           ]
         },
         {
@@ -157,6 +162,21 @@ export default defineConfig({
             { text: '环境变量', link: '/electron/env' },
             { text: 'TypeScript', link: '/electron/ts' },
             { text: '安装devTools工具', link: '/electron/devtools-installer' },
+          ]
+        }
+      ],
+      /// ------------------------------ Electron ------------------------------
+      '/python/': [
+        {
+          text: 'Python',
+          collapsed: false,
+          items: [
+            { text: '介绍', link: '/python/' },
+            { text: '字符串', link: '/python/string' },
+            { text: '列表', link: '/python/list' },
+            { text: '元组', link: '/python/tuple' },
+            { text: '类型转换', link: '/python/typecast' },
+            { text: '跟其他语言的不同点', link: '/python/different' },
           ]
         }
       ],
@@ -247,9 +267,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '介绍', link: '/frontend/jquery/' },
-            { text: 'HTML', link: '/frontend/jquery/html/' },
-            { text: 'AJAX', link: '/frontend/jquery/ajax/' },
-            { text: '事件', link: '/frontend/jquery/event/' },
+            { text: 'HTML', link: '/frontend/jquery/html' },
+            { text: 'AJAX', link: '/frontend/jquery/ajax' },
+            { text: '事件', link: '/frontend/jquery/event' },
           ]
         }
       ],

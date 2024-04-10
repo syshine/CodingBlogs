@@ -85,6 +85,9 @@ pnpm install highlight.js
 pnpm install iconv-lite
 [npm地址](https://www.npmjs.com/package/iconv-lite)
 
+# WebSocket
+pnpm install ws
+
 # 标记暂时
 pnpm install axios
 pnpm install qs

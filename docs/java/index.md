@@ -4,7 +4,7 @@ Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的高级程序设计
 Java 可运行于多个平台，如 Windows, Mac OS 及其他多种 UNIX 版本的系统。
 ## window系统安装java
 ### 下载JDK
-首先我们需要下载 java 开发工具包 JDK，下载地址：https://www.oracle.com/java/technologies/downloads/，在下载页面中根据自己的系统选择对应的版本，以 Window 64位系统为例：
+首先我们需要[下载java开发工具包JDK](https://www.oracle.com/java/technologies/downloads/)，在下载页面中根据自己的系统选择对应的版本，以 Window 64位系统为例：
 ![JDK选择版本](./images/jdk-download.png)
 下载后 JDK 的安装根据提示进行，还有安装 JDK 的时候也会安装 JRE，一并安装就可以了。
 ### 配置环境变量
@@ -24,7 +24,7 @@ Java 可运行于多个平台，如 Windows, Mac OS 及其他多种 UNIX 版本�
 
 ```
 注意：在 Windows10 中，Path 变量里是分条显示的，
-我们需要将 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; 分开添加，否则无法识别：
+我们需要将 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; 分开添加，否则无法识别!
 ```
 ```
 %JAVA_HOME%\bin;

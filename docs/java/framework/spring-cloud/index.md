@@ -1,5 +1,5 @@
 ## SpringCloud核心组件:
-`Eureka`:服务启动时,Eureka会将服务注册到EurekaService,并且EurakeClient还可以返回过来从EurekaService拉去注册表,从而知道服务在哪里
+`Eureka`:服务启动时,Eureka会将服务注册到EurekaService,并且EurakeClient还可以返回过来从EurekaService拉取注册表,从而知道服务在哪里
 
 `Ribbon`:服务间发起请求的时候,基于Ribbon服务做到负载均衡,从一个服务的对台机器中选择一台
 

@@ -9,7 +9,7 @@ pom.xml添加Mybatis依赖
     <artifactId>mybatis</artifactId>
     <version>3.5.3</version>
   </dependency>
-<、dependencies>
+</dependencies>
 ```
 
 ## xml格式
@@ -39,6 +39,8 @@ public List<Object> getList(@Param("department_id")Long department_id,
 ```
 SQL文件:
 ```xml
+<resultMap type="yourproject.entity.FormulaEntity" id="formula">
+</resultMap>
 <!-- 查询到的结果总数 -->
 <resultMap type="java.lang.Long" id="count">
   <result column="total"/>
@@ -76,7 +78,7 @@ SQL文件:
   <association property="department"
     column="department_id"
     javaType="yourproject.entity.DepartmentEntity"
-    select="getDepartmentId"
+    select="getDepartmentById"
     fetchType="lazy"/>
 </resultMap>
 
@@ -86,8 +88,8 @@ SQL文件:
 </select>
 
 <!-- 查询部门 -->
-<select id="getDepartmentList" resultType="yourproject.entity.DepartmentEntity">
-  department from stock_formula_group where uid =#{uid} and del_flag = 0
+<select id="getDepartmentById" resultType="yourproject.entity.DepartmentEntity">
+  select * from department where did =#{department_id} and del_flag = 0
 </select>
 ```
 ### 新增
@@ -131,6 +133,8 @@ SQL文件:
 ## 注解格式
 使用Mapper注解(配合\@Select等注解),不用写UserSQL.xml文件，需要在SqlMapConfig.xml的mappers节点添加
 `<package name="yourproject.dao.(包名)"/>`
+或者
+`<mapper class="yourproject.dao.class_name"/>`
 
 类上添加注解`@Mapper`
 ```java
